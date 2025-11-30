@@ -12,7 +12,7 @@
   <div id="fijo"></div>
 
   <!-- MENÚ -->
-  <nav style ="font-size: 13px;" id="nav">
+  <nav id="nav">
     <a href="#home">Home</a>
     <a href="#gente">Gente</a>
     <a href="#research">Investigación</a>
@@ -306,7 +306,7 @@
 
 
       <!-- -->
-      <h3 class="cat">Dinamica de la información</h3>
+      <h3 class="cat">Dinámica de la información</h3>
 
       <div class="cat-grid-2" >
 
@@ -502,5 +502,16 @@
 
 
   <script src="script.js"></script>
+  <style>
+    /*resize del tamaño de letras del menu en celulares*/
+    @media (max-width: 768px) {
+        #nav{
+            font-size: 14px;
+        }
+        #nav a {
+            margin-right: 2px;
+        }
+    }
+  </style>
 </body>
 </html>
