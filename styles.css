@@ -210,9 +210,14 @@ a { color: #000; text-decoration: underline; }
 
 .texto-bloque {
   padding-top: 12px;   /* ajustá el valor a gusto */
-  text-align: justify;
+  text-align: justify; 
   font-weight: 300;   /* Roboto más fina */
   line-height: 1.6;
+
+  /* ⬅️ Solución para mejorar el justificado */
+  hyphens: auto;              /* Permite el uso de guiones */
+  -webkit-hyphens: auto;      /* Soporte para navegadores basados en WebKit (Chrome, Safari) */
+  -ms-hyphens: auto;          /* Soporte para Internet Explorer/Edge */
 }
 
 .texto-bloque p:first-child {
